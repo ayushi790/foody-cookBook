@@ -17,7 +17,7 @@ A simple food app providing help and receipes for the people who love to cook.
 - Kotlin
 - XML
 
-## :game_die: Libraries used
+## :game_die: Dependencies used
 - [Volley](https://github.com/google/volley)
 - [Gson](https://github.com/google/gson)
 - [SimpleArcLoader](https://github.com/generic-leo/SimpleArcLoader)
