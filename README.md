@@ -32,4 +32,8 @@ Click [here](https://www.youtube.com/watch?v=gHmjkc2ryNo)
 
 ## :paperclip: Get APK [here](https://drive.google.com/file/d/1TH4dV3lzG2NT7ir2v0JmlbaP26n_KpiM/view?usp=sharing)
 
-Made with :heart: by [Ayushi Gupta](https://github.com/ayushi790/)
+ :pushpin: API Used: https://www.themealdb.com/api.php
+
+<br> Made with :heart: by [Ayushi Gupta](https://github.com/ayushi790/)
+
+
