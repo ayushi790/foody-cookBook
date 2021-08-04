@@ -21,6 +21,7 @@ A simple food app providing help and receipes for the people who love to cook.
 - [Volley](https://github.com/google/volley)
 - [Gson](https://github.com/google/gson)
 - [SimpleArcLoader](https://github.com/generic-leo/SimpleArcLoader)
+- [Picasso](https://square.github.io/picasso/)
 
 ## :dart: Features of the app
 - :ramen: The app provides some random foods whenever the user opens the app.
