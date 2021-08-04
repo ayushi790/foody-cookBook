@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgStrMealThumb"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/custom_image"
+            android:elevation="22dp"/>
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/imgStrMealThumb"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/favBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/circular_view"/>
+
+            <ImageView
+                android:id="@+id/vidBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_ondemand_video_24"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:background="@drawable/circular_view"/>
+
+            <ImageView
+                android:id="@+id/strSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_menu_book_24"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:background="@drawable/circular_view"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStrMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft ="20dp"
+            android:layout_below="@+id/llContent"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:textSize="35sp"/>
+
+        <View
+            android:id="@+id/viewStrMeal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtStrMeal"
+            android:layout_height="1dp"
+            android:background="#c2d6d6"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <RelativeLayout
+            android:id="@+id/llContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/viewStrMeal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tray"
+                android:padding="10dp"
+                android:paddingLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yumm!! Lets make it"
+                android:id="@+id/titleInstruction"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/logo"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llContent2"
+            android:text="Ingredients"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_btn"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtIngredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnIngredients"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btnInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtIngredients"
+            android:text="Instructions"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_btn"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/secondary_two"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnInstructions"
+            android:id="@+id/txtInstructions"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInstructions"
+            android:layout_alignParentBottom="true"
+            android:text="Made with ♥️ by Ayushi Gupta"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/secondary"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
